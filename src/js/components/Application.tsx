@@ -10,11 +10,14 @@ extensionStore.register('content', [
     OutputC
 ]);
 
+extensionStore.register('footer', [OutputC]);
+
 export function Application() {
     return (
         <ExtensionProvider>
             <div className="application">Application</div>
             <Extension role="content" />
+            <Extension role="footer" />
         </ExtensionProvider>
     );
 }
